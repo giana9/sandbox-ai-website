@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7ef">
+  <meta name="description" content="Small-batch custom cookies, made just for your moment. Share your idea with Juniper & Crumb.">
+  <title>Juniper &amp; Crumb | Custom Cookies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Juniper and Crumb home">
+      <span class="brand-mark" aria-hidden="true">J<span>&amp;</span>C</span>
+      <span class="brand-name">juniper <i>&amp;</i> crumb</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#cookies">Our cookies</a>
+      <a href="#story">Our story</a>
+      <a class="nav-order" href="#order">Plan your order <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Little-batch, big-hearted</p>
+        <h1>A cookie for<br>your kind of <em>occasion.</em></h1>
+        <p class="hero-description">Hand-decorated, made from scratch, and dreamed up with you. Tell us what you’re celebrating.</p>
+        <a class="button button-dark" href="#order">Make it yours <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-stars" aria-hidden="true">✳ ✳ ✳</span><span>Thoughtful treats, baked in small batches</span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1400&q=85" alt="Freshly baked cookies arranged on a tray">
+        <div class="image-stamp" aria-label="Made with love, always"><span>MADE WITH LOVE</span><strong>✳</strong><span>ALWAYS, ALWAYS</span></div>
+        <span class="image-caption">A little something worth gathering for.</span>
+      </div>
+      <span class="hero-side-note" aria-hidden="true">BAKED WITH A LITTLE EXTRA JOY · EST. 2021</span>
+    </section>
+
+    <section class="cookie-strip" id="cookies" aria-label="Cookie specialties">
+      <p class="eyebrow">Good things, made by hand</p>
+      <div class="cookie-list">
+        <span>✳ Custom iced cookies</span><span>✳ Celebrations &amp; milestones</span><span>✳ Boxes made for sharing</span>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-intro">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Your idea, in cookie form</p>
+        <h2>Let’s make<br>something <em>sweet.</em></h2>
+        <p>From a tiny “thank you” to a very big day, we’ll help bring your cookie idea to life. Share a few details and we’ll take it from there.</p>
+        <div class="order-details">
+          <div><span class="detail-icon" aria-hidden="true">01</span><span>Made fresh to order</span></div>
+          <div><span class="detail-icon" aria-hidden="true">02</span><span>Designed around your occasion</span></div>
+          <div><span class="detail-icon" aria-hidden="true">03</span><span>Pickup and local delivery available</span></div>
+        </div>
+        <p class="minimum-note">Custom orders start at one dozen cookies.</p>
+      </div>
+
+      <form class="order-form" id="order-form">
+        <div class="form-heading">
+          <span>01 <i>—</i> Tell us about you</span>
+          <span class="required-note">* Required</span>
+        </div>
+        <div class="form-grid">
+          <label class="field">
+            <span>Your name <b>*</b></span>
+            <input type="text" name="name" autocomplete="name" placeholder="The name we should use" required>
+          </label>
+          <label class="field">
+            <span>Email address <b>*</b></span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+          <label class="field">
+            <span>What are we celebrating? <b>*</b></span>
+            <select name="occasion" required>
+              <option value="" disabled selected>Choose an occasion</option>
+              <option>Birthday</option>
+              <option>Wedding or shower</option>
+              <option>Baby celebration</option>
+              <option>Work or business</option>
+              <option>Just because</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>How many cookies? <b>*</b></span>
+            <select name="quantity" required>
+              <option value="" disabled selected>Choose a quantity</option>
+              <option value="12">1 dozen</option>
+              <option value="24">2 dozen</option>
+              <option value="36">3 dozen</option>
+              <option value="48">4 dozen</option>
+              <option value="custom">More than 4 dozen</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>When do you need them? <b>*</b></span>
+            <input type="date" name="date" required>
+          </label>
+          <label class="field">
+            <span>Favorite flavor</span>
+            <select name="flavor">
+              <option value="Classic vanilla sugar">Classic vanilla sugar</option>
+              <option value="Brown butter chocolate chip">Brown butter chocolate chip</option>
+              <option value="Lemon sugar">Lemon sugar</option>
+              <option value="Surprise me">Surprise me</option>
+            </select>
+          </label>
+          <label class="field field-wide">
+            <span>Tell us what you’re imagining <b>*</b></span>
+            <textarea name="details" rows="4" placeholder="Colors, theme, wording, dietary needs, or any little details you have in mind..." required></textarea>
+          </label>
+        </div>
+        <div class="form-bottom">
+          <p>We’ll follow up to talk through the details and make it official.</p>
+          <button class="button button-green" type="submit">Send your idea <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="story-band" id="story">
+      <span class="story-flower" aria-hidden="true">✳</span>
+      <p>Good cookies make a moment.<br><em>Personal ones make a memory.</em></p>
+      <a href="#order">Let’s bake yours <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">J<span>&amp;</span>C</span><span class="brand-name">juniper <i>&amp;</i> crumb</span></a>
+    <p>Small-batch cookies, made with heart.</p>
+    <span class="footer-credit">© 2026 Juniper &amp; Crumb</span>
+  </footer>
+</body>
+</html>
